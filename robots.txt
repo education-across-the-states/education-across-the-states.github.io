@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://education-across-the-states.github.io/sitemap.xml
+Sitemap: https://educationacrossthestates.com/sitemap.xml
