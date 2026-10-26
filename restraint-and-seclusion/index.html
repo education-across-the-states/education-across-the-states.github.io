@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Restraint &amp; Seclusion in America's School Districts — Education Across the States</title>
+<meta name="description" content="A public comparison of reported restraint and seclusion rates — not just counts — for school districts in the 2023–24 Civil Rights Data Collection, with each district's reporting status shown. All figures are as districts reported them to the U.S. Department of Education.">
+<style>
+  :root{
+    --ink:#1a1a18; --paper:#faf8f4; --accent:#8a3324; --rule:#d8d2c4; --muted:#5c574c;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px 64px}
+  header{border-bottom:3px double var(--ink);padding:36px 0 22px;text-align:center}
+  .kicker{font-family:Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+  h1{font-size:40px;line-height:1.12;margin:0 0 12px;font-weight:700}
+  .tagline{font-size:19px;font-style:italic;color:var(--muted);margin:0}
+  nav{font-family:Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;text-align:center;padding:14px 0;border-bottom:1px solid var(--rule)}
+  nav a{color:var(--ink);text-decoration:none;margin:0 12px}
+  nav a:hover{color:var(--accent);text-decoration:underline}
+  section{padding:30px 0 6px}
+  h2{font-size:26px;margin:0 0 6px;border-bottom:1px solid var(--rule);padding-bottom:8px}
+  h3{font-size:19px;margin:22px 0 4px}
+  p{margin:10px 0}
+  .lede{font-size:19px}
+  .subhead{font-size:16px;color:var(--muted)}
+  .basis{font-size:13px;color:var(--muted);border-left:3px solid var(--rule);padding:6px 0 6px 12px;margin:14px 0}
+  .statband{display:flex;flex-wrap:wrap;gap:14px;margin:20px 0 4px}
+  .stat{flex:1 1 200px;border:1px solid var(--rule);padding:14px;text-align:center;background:#fff}
+  .stat b{display:block;font-size:28px;line-height:1.1}
+  .stat span{font-family:Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+  .defs{background:#fff;border:1px solid var(--rule);padding:14px 18px;margin:16px 0;font-size:14px}
+  .defs p{margin:6px 0}
+  .tablewrap{overflow-x:auto;margin:14px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;background:#fff}
+  th,td{border:1px solid var(--rule);padding:7px 9px;text-align:right;vertical-align:top}
+  th{font-family:Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.4px;background:#f1ede3;text-align:right}
+  th:first-child,td:first-child{text-align:left}
+  th.sortable{cursor:pointer}
+  th.sortable:hover{color:var(--accent)}
+  td.num{font-variant-numeric:tabular-nums}
+  .badge{display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:.4px;padding:2px 8px;border-radius:10px;border:1px solid var(--rule);white-space:nowrap}
+  .b-inc{background:#eef4e6}
+  .b-zero{background:#fdf3e3}
+  .b-nr{background:#f6e8e4}
+  .note-line{display:block;font-size:12px;color:var(--muted);margin-top:4px;text-align:left}
+  .partial-note{display:block;font-size:12px;color:var(--muted);margin-top:5px;text-align:left;max-width:340px}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 8px;font-family:Helvetica,Arial,sans-serif;font-size:13px}
+  .controls label{display:flex;flex-direction:column;gap:4px;color:var(--muted)}
+  .controls input[type="text"],.controls select{font-family:Helvetica,Arial,sans-serif;font-size:14px;padding:7px 9px;border:1px solid var(--rule);background:#fff;color:var(--ink)}
+  .controls .check{flex-direction:row;align-items:center;gap:7px;color:var(--ink);max-width:520px}
+  #countline{font-family:Helvetica,Arial,sans-serif;font-size:13px;color:var(--muted);margin:8px 0}
+  .pager{font-family:Helvetica,Arial,sans-serif;font-size:13px;margin:12px 0}
+  .pager button{font-family:Helvetica,Arial,sans-serif;font-size:13px;padding:6px 14px;border:1px solid var(--rule);background:#fff;cursor:pointer;margin-right:8px}
+  .pager button:disabled{opacity:.4;cursor:default}
+  tr.drow{cursor:pointer}
+  tr.drow:hover{background:#f7f3ea}
+  tr.detail td{background:#fbf9f4;text-align:left}
+  .detail h4{margin:4px 0 8px;font-size:16px}
+  .detail table{font-size:13px}
+  .detail .explainer{font-size:13.5px;background:#fff;border:1px solid var(--rule);padding:10px 14px;margin:10px 0}
+  .footnote{font-size:13px;color:var(--muted)}
+  .standard{background:#fff;border:1px solid var(--rule);padding:18px 22px;margin:16px 0}
+  footer{border-top:3px double var(--ink);margin-top:44px;padding-top:18px;font-family:Helvetica,Arial,sans-serif;font-size:13px;color:var(--muted);text-align:center}
+  a{color:var(--accent)}
+  @media (max-width:600px){h1{font-size:29px}.tagline{font-size:16px}}
+</style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BKHMYPZ7BY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BKHMYPZ7BY');
+</script>
+<!-- GoatCounter -->
+<script data-goatcounter="https://educationacrossthestates.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="kicker">Education Across the States — Data</p>
+  <h1>Restraint &amp; Seclusion in America's School Districts</h1>
+  <p class="tagline">The go to place for any issue having to do with education across the nation</p>
+</header>
+
+<nav>
+  <a href="https://educationacrossthestates.com/">Home</a>
+  <a href="https://educationacrossthestates.com/states/">States</a>
+  <a href="https://educationacrossthestates.com/shows.html">Shows</a>
+  <a href="https://educationacrossthestates.com/one-in-five/">One in Five</a>
+  <a href="https://educationacrossthestates.com/records-project.html">Records Project</a>
+  <a href="https://educationacrossthestates.com/press-kit.html">Press Kit</a>
+</nav>
+
+<section id="top">
+  <p class="lede">A public comparison of reported restraint and seclusion <strong>rates</strong> — not just counts — for school districts in the 2023–24 Civil Rights Data Collection, with each district's reporting status shown.</p>
+  <p class="subhead">Rates are students reported per 1,000 enrolled students. This page also shows each district's IDEA disparity ratio and its change from 2020–21, and it shows reported zeros and districts with no valid report as what they are — reports, not findings.</p>
+
+  <div class="statband">
+    <div class="stat"><b>129,701</b><span>Students reported, summed across practice types (not unique students)</span></div>
+    <div class="stat"><b>406,794</b><span>Incidents reported, all practice types</span></div>
+    <div class="stat"><b>2.69</b><span>Students reported per 1,000 enrolled (summed basis)</span></div>
+    <div class="stat"><b>4.4&times;</b><span>IDEA disparity ratio — students with IEPs were 66.3% of students reported, 14.9% of enrollment</span></div>
+  </div>
+  <p class="basis">This figure sums the student counts for physical restraint, mechanical restraint, and seclusion. A student reported in more than one practice type is counted once in each type, so this is not a count of unique students. Rates and the IDEA disparity ratio built on this figure use the same summed basis.</p>
+</section>
+
+<section id="zeros">
+  <h2>Reported zeros</h2>
+  <p><strong>A reported zero is a report, not a verified fact.</strong> Districts self-report, and this page does not independently verify district reports. In a review of the 2015–16 collection, the U.S. Government Accountability Office found that some of the nation's largest districts reported zeros that were incorrect (GAO-19-551R, June 2019); the GAO made no finding about any district's 2023–24 report. In 2023–24, 64% of districts reported zero — including 148 districts enrolling more than 10,000 students each. This page therefore shows three states distinctly: <em>reported 1 or more students</em>, <em>reported zero students</em>, and <em>no valid report in the CRDC file</em>. Across a self-reported dataset, a zero can reflect different definitions, different counting rules, incidents not captured in a count, or a district that does not restrain or seclude students; this page does not assign a reason to any district's zero, and it does not treat a reported zero as proof that no incidents occurred or as proof that any incidents did occur. State definitions and counting rules differ, so cross-state gaps reflect reporting practice as well as practice itself.</p>
+</section>
+
+<section id="states">
+  <h2>State summary — 2023–24</h2>
+  <p>State figures are the sums of the state's districts as reported to the CRDC. Select a column heading to sort. American Samoa, Guam, the Northern Mariana Islands, and the U.S. Virgin Islands are not collected by the CRDC and appear below the table as not collected — never as zero.</p>
+  <div class="defs">
+    <p><strong>How the three reporting states read.</strong> &ldquo;Reported 1 or more students&rdquo; means the district's CRDC report lists at least one student restrained or secluded. &ldquo;Reported zero students&rdquo; means the district submitted a valid CRDC report listing zero students. &ldquo;No valid report in the CRDC file&rdquo; means no school in the district has a valid report for this practice type in the file as released; it is not a zero and this page does not treat it as one.</p>
+  </div>
+  <div class="tablewrap">
+  <table id="statetable">
+    <thead>
+      <tr>
+        <th class="sortable" data-k="name">State</th>
+        <th class="sortable" data-k="districts">Districts</th>
+        <th class="sortable" data-k="enr">Enrollment</th>
+        <th class="sortable" data-k="sa">Students reported, summed across practice types (not unique students)</th>
+        <th class="sortable" data-k="ia">Incidents reported</th>
+        <th class="sortable" data-k="rate">Students reported per 1,000 enrolled (sum across types — not unique students)</th>
+        <th class="sortable" data-k="dis">IDEA disparity ratio</th>
+        <th class="sortable" data-k="rz">Districts reporting zero students</th>
+        <th class="sortable" data-k="nr">Districts with no valid report</th>
+      </tr>
+    </thead>
+    <tbody id="statebody"></tbody>
+  </table>
+  </div>
+  <p class="footnote">Not collected by the CRDC: American Samoa · Guam · Northern Mariana Islands · U.S. Virgin Islands. These jurisdictions do not appear in the CRDC and are not shown as zero anywhere on this page.</p>
+  <p class="footnote">Puerto Rico is represented in the CRDC by a single territory-wide district, which reported zero students restrained or secluded among 240,977 enrolled students in 2023–24. That is the district's reported result. This page does not treat a reported zero as proof that no incidents occurred, and it does not treat it as proof that any incidents did occur.</p>
+</section>
+
+<section id="explorer">
+  <h2>Find and compare districts</h2>
+  <p>Search by district name, narrow by state or reporting status, and sort by reported rate, incidents, students, or disparity ratio. Select a district row for its full breakdown by practice type. The ranked view applies this page's minimum-enrollment thresholds (1,000 students nationally, 500 within a state) and excludes districts above the 100-per-1,000 review threshold from ranked lists, as the methodology below describes; searching by name, or switching the ranked view off, shows every district in the file.</p>
+  <div class="defs">
+    <p><strong>How the three reporting states read.</strong> &ldquo;Reported 1 or more students&rdquo; means the district's CRDC report lists at least one student restrained or secluded. &ldquo;Reported zero students&rdquo; means the district submitted a valid CRDC report listing zero students. &ldquo;No valid report in the CRDC file&rdquo; means no school in the district has a valid report for this practice type in the file as released; it is not a zero and this page does not treat it as one.</p>
+  </div>
+  <div class="controls">
+    <label>Search by district name
+      <input type="text" id="q" placeholder="e.g. Berlin, Memphis, Nashua" size="28">
+    </label>
+    <label>State
+      <select id="fs"><option value="">All states</option></select>
+    </label>
+    <label>Reporting status
+      <select id="fst">
+        <option value="">All statuses</option>
+        <option value="reported_incidents">Reported 1 or more students</option>
+        <option value="reported_zero">Reported zero students</option>
+        <option value="not_reported">No valid report in the CRDC file</option>
+      </select>
+    </label>
+    <label>Sort by
+      <select id="sort">
+        <option value="ra">Rate per 1,000 (high to low)</option>
+        <option value="ia">Incidents reported (high to low)</option>
+        <option value="sa">Students reported (high to low)</option>
+        <option value="dis">IDEA disparity ratio (high to low)</option>
+        <option value="enr">Enrollment (high to low)</option>
+        <option value="n">District name (A–Z)</option>
+      </select>
+    </label>
+    <label class="check"><input type="checkbox" id="ranked" checked> Ranked view: minimum-enrollment thresholds on, and districts above the 100-per-1,000 review threshold excluded from ranked lists</label>
+  </div>
+  <p id="countline">Loading district data…</p>
+  <div class="tablewrap">
+  <table id="dtable">
+    <thead>
+      <tr>
+        <th>District</th>
+        <th>State</th>
+        <th>Enrollment</th>
+        <th>Students reported, summed across practice types (not unique students)</th>
+        <th>Incidents reported</th>
+        <th>Rate per 1,000 enrolled</th>
+        <th>IDEA disparity ratio</th>
+        <th>Reporting status</th>
+        <th>Change in reported rate since 2020–21 (per 1,000)</th>
+      </tr>
+    </thead>
+    <tbody id="dbody"></tbody>
+  </table>
+  </div>
+  <div class="pager">
+    <button id="prev" disabled>&larr; Previous 100</button>
+    <button id="next" disabled>Next 100 &rarr;</button>
+    <span id="pageinfo"></span>
+  </div>
+  <p class="footnote">&ldquo;—&rdquo; means the figure was not reported or cannot be computed from the report — for example, a disparity ratio where the district reported zero students.</p>
+</section>
+
+<section id="methodology">
+  <h2>How to read these numbers</h2>
+  <p><strong>How to read these numbers.</strong> All figures come from the U.S. Department of Education's Civil Rights Data Collection (CRDC), the federal collection covering nearly all public school districts: 2023–24 (released August 2026), with 2020–21 shown for change. The CRDC covers the 50 states, the District of Columbia, and Puerto Rico; American Samoa, Guam, the Northern Mariana Islands, and the U.S. Virgin Islands are not collected by the CRDC and do not appear. Districts report how many <em>students</em> were physically restrained, mechanically restrained, or secluded at least once, and how many <em>incidents</em> occurred; students and incidents are different measures and are labelled separately throughout. One student can be counted in more than one practice type, so a combined student figure is a sum across types — the sum of the three type counts, in which a student reported in two types is counted twice — and is never a count of unique students. Every combined figure, rate, and ratio on this page is labelled on that basis where it appears. District figures are the sum of the district's schools. Rates are students reported per 1,000 enrolled, which is what makes a 400-student district comparable to a 40,000-student one.</p>
+  <p><strong>A reported zero is a report, not a verified fact.</strong> Districts self-report, and this page does not independently verify district reports. In a review of the 2015–16 collection, the U.S. Government Accountability Office found that some of the nation's largest districts reported zeros that were incorrect (GAO-19-551R, June 2019); the GAO made no finding about any district's 2023–24 report. In 2023–24, 64% of districts reported zero — including 148 districts enrolling more than 10,000 students each. This page therefore shows three states distinctly: <em>reported 1 or more students</em>, <em>reported zero students</em>, and <em>no valid report in the CRDC file</em>. Across a self-reported dataset, a zero can reflect different definitions, different counting rules, incidents not captured in a count, or a district that does not restrain or seclude students; this page does not assign a reason to any district's zero, and it does not treat a reported zero as proof that no incidents occurred or as proof that any incidents did occur. State definitions and counting rules differ, so cross-state gaps reflect reporting practice as well as practice itself.</p>
+  <p><strong>Small numbers and special settings.</strong> Rates for very small districts swing on a handful of students; rankings use minimum-enrollment thresholds (1,000 nationally, 500 within states) and every district above 100 students reported per 1,000 is shown with a context note instead of being ranked. Districts that operate therapeutic, hospital, or juvenile-justice programs — including programs serving students placed by <em>other</em> districts — will show high rates that describe their enrollment, not necessarily their conduct.</p>
+  <p><strong>2020–21 is a pandemic year.</strong> Widespread virtual instruction mechanically lowered 2020–21 counts (many virtual-only schools were skipped for these items). Change figures are computed only for districts that reported in both years and should be read as &ldquo;reported change&rdquo; — part real change, part return to in-person schooling, part change in counting.</p>
+  <p>Methodology notes: CRDC reserve codes (−3, −5, −6, −9, −12, −13) are treated as missing, never as counts. A school that reported a practice type with no counts is scored zero for that type; a school that did not report stays missing — that is what keeps &ldquo;reported zero students&rdquo; and &ldquo;no valid report in the CRDC file&rdquo; distinct. District rates and ratios are computed from the summed counts, never by averaging school rates. The enrollment denominator is enrollment as summed from schools in the CRDC file, cross-checked against the district's own LEA-reported total.</p>
+</section>
+
+<section id="sources">
+  <h2>Sources</h2>
+  <p>U.S. Department of Education, Office for Civil Rights, Civil Rights Data Collection (CRDC) public-use data files, 2023–24 (released August 2026) and 2020–21; OCR, <em>A First Look: The Civil Rights Data Collection, 2023–24</em> (September 2026); U.S. Government Accountability Office, GAO-19-551R (June 2019) and GAO-20-345 (April 2020). District figures on this page are Education Across the States' sums and calculations from the CRDC public-use files as released.</p>
+</section>
+
+<section id="corrections">
+  <h2>Corrections and district responses</h2>
+  <div class="standard">
+    <p><strong>Corrections and district responses.</strong> Every figure on this page is drawn from the U.S. Department of Education's Civil Rights Data Collection (CRDC) public-use files as released. If you believe this page misstates a figure — in transcription, calculation, or labelling — contact Education Across the States at <a href="mailto:educationacrossthestates@gmail.com">educationacrossthestates@gmail.com</a> with the subject line &ldquo;CRDC data correction — [district name, state].&rdquo; We review each request against the CRDC file as released; if we made an error, we will correct the page and note the correction and its date on this page. Figures that match the district's CRDC report as released are shown as the district reported them; a district that wishes to amend its federal report should contact the Office for Civil Rights, which maintains the CRDC.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Education Across the States · The go to place for any issue having to do with education across the nation</p>
+  <p>Produced by Charles Mayfield · <a href="https://educationacrossthestates.com/press-kit.html">Press Kit</a></p>
+</footer>
+
+</div>
+
+<script>
+var STATES = [
+ {
+  "st": "ME",
+  "name": "Maine",
+  "districts": 198,
+  "nr": 3,
+  "rz": 91,
+  "enr": 161608,
+  "sa": 1740,
+  "ia": 6647,
+  "rate": 10.77,
+  "dis": 4.35,
+  "lz": 0
+ },
+ {
+  "st": "IA",
+  "name": "Iowa",
+  "districts": 329,
+  "nr": 0,
+  "rz": 152,
+  "enr": 479628,
+  "sa": 4617,
+  "ia": 14374,
+  "rate": 9.63,
+  "dis": 5.88,
+  "lz": 1
+ },
+ {
+  "st": "CT",
+  "name": "Connecticut",
+  "districts": 199,
+  "nr": 0,
+  "rz": 60,
+  "enr": 489625,
+  "sa": 3898,
+  "ia": 21564,
+  "rate": 7.96,
+  "dis": 5.33,
+  "lz": 1
+ },
+ {
+  "st": "WA",
+  "name": "Washington",
+  "districts": 315,
+  "nr": 2,
+  "rz": 136,
+  "enr": 1063174,
+  "sa": 6915,
+  "ia": 25085,
+  "rate": 6.5,
+  "dis": 4.98,
+  "lz": 0
+ },
+ {
+  "st": "VT",
+  "name": "Vermont",
+  "districts": 106,
+  "nr": 1,
+  "rz": 50,
+  "enr": 72803,
+  "sa": 469,
+  "ia": 1411,
+  "rate": 6.44,
+  "dis": 3.78,
+  "lz": 0
+ },
+ {
+  "st": "GA",
+  "name": "Georgia",
+  "districts": 230,
+  "nr": 2,
+  "rz": 129,
+  "enr": 1700357,
+  "sa": 10842,
+  "ia": 14903,
+  "rate": 6.38,
+  "dis": 1.13,
+  "lz": 4
+ },
+ {
+  "st": "NE",
+  "name": "Nebraska",
+  "districts": 250,
+  "nr": 1,
+  "rz": 190,
+  "enr": 313204,
+  "sa": 1916,
+  "ia": 12877,
+  "rate": 6.12,
+  "dis": 4.34,
+  "lz": 0
+ },
+ {
+  "st": "KS",
+  "name": "Kansas",
+  "districts": 290,
+  "nr": 1,
+  "rz": 170,
+  "enr": 459381,
+  "sa": 2749,
+  "ia": 12547,
+  "rate": 5.98,
+  "dis": 4.92,
+  "lz": 0
+ },
+ {
+  "st": "ND",
+  "name": "North Dakota",
+  "districts": 168,
+  "nr": 5,
+  "rz": 139,
+  "enr": 118609,
+  "sa": 701,
+  "ia": 2166,
+  "rate": 5.91,
+  "dis": 5.29,
+  "lz": 0
+ },
+ {
+  "st": "RI",
+  "name": "Rhode Island",
+  "districts": 62,
+  "nr": 0,
+  "rz": 25,
+  "enr": 129663,
+  "sa": 753,
+  "ia": 2129,
+  "rate": 5.81,
+  "dis": 4.38,
+  "lz": 0
+ },
+ {
+  "st": "WI",
+  "name": "Wisconsin",
+  "districts": 449,
+  "nr": 0,
+  "rz": 148,
+  "enr": 771957,
+  "sa": 4396,
+  "ia": 10999,
+  "rate": 5.69,
+  "dis": 4.92,
+  "lz": 0
+ },
+ {
+  "st": "WY",
+  "name": "Wyoming",
+  "districts": 56,
+  "nr": 0,
+  "rz": 27,
+  "enr": 90692,
+  "sa": 455,
+  "ia": 2849,
+  "rate": 5.02,
+  "dis": 5.59,
+  "lz": 0
+ },
+ {
+  "st": "IN",
+  "name": "Indiana",
+  "districts": 404,
+  "nr": 6,
+  "rz": 210,
+  "enr": 1005000,
+  "sa": 5012,
+  "ia": 12439,
+  "rate": 4.99,
+  "dis": 4.67,
+  "lz": 4
+ },
+ {
+  "st": "IL",
+  "name": "Illinois",
+  "districts": 925,
+  "nr": 7,
+  "rz": 606,
+  "enr": 1772456,
+  "sa": 8705,
+  "ia": 46126,
+  "rate": 4.91,
+  "dis": 3.12,
+  "lz": 3
+ },
+ {
+  "st": "DE",
+  "name": "Delaware",
+  "districts": 44,
+  "nr": 0,
+  "rz": 22,
+  "enr": 140292,
+  "sa": 658,
+  "ia": 2382,
+  "rate": 4.69,
+  "dis": 4.83,
+  "lz": 0
+ },
+ {
+  "st": "SD",
+  "name": "South Dakota",
+  "districts": 149,
+  "nr": 0,
+  "rz": 120,
+  "enr": 139832,
+  "sa": 636,
+  "ia": 2486,
+  "rate": 4.55,
+  "dis": 3.89,
+  "lz": 0
+ },
+ {
+  "st": "NH",
+  "name": "New Hampshire",
+  "districts": 192,
+  "nr": 2,
+  "rz": 105,
+  "enr": 161006,
+  "sa": 705,
+  "ia": 1967,
+  "rate": 4.38,
+  "dis": 4.36,
+  "lz": 0
+ },
+ {
+  "st": "DC",
+  "name": "District of Columbia",
+  "districts": 57,
+  "nr": 1,
+  "rz": 44,
+  "enr": 85764,
+  "sa": 366,
+  "ia": 398,
+  "rate": 4.27,
+  "dis": 3.04,
+  "lz": 0
+ },
+ {
+  "st": "MO",
+  "name": "Missouri",
+  "districts": 548,
+  "nr": 7,
+  "rz": 358,
+  "enr": 869213,
+  "sa": 3523,
+  "ia": 15517,
+  "rate": 4.05,
+  "dis": 5.46,
+  "lz": 0
+ },
+ {
+  "st": "MN",
+  "name": "Minnesota",
+  "districts": 520,
+  "nr": 10,
+  "rz": 367,
+  "enr": 857136,
+  "sa": 3206,
+  "ia": 11277,
+  "rate": 3.74,
+  "dis": 5.42,
+  "lz": 4
+ },
+ {
+  "st": "NV",
+  "name": "Nevada",
+  "districts": 20,
+  "nr": 0,
+  "rz": 7,
+  "enr": 466448,
+  "sa": 1644,
+  "ia": 4097,
+  "rate": 3.52,
+  "dis": 6.03,
+  "lz": 0
+ },
+ {
+  "st": "TX",
+  "name": "Texas",
+  "districts": 1197,
+  "nr": 4,
+  "rz": 741,
+  "enr": 5287811,
+  "sa": 18103,
+  "ia": 45367,
+  "rate": 3.42,
+  "dis": 3.79,
+  "lz": 16
+ },
+ {
+  "st": "KY",
+  "name": "Kentucky",
+  "districts": 173,
+  "nr": 1,
+  "rz": 67,
+  "enr": 646984,
+  "sa": 2134,
+  "ia": 7415,
+  "rate": 3.3,
+  "dis": 4.25,
+  "lz": 0
+ },
+ {
+  "st": "OH",
+  "name": "Ohio",
+  "districts": 992,
+  "nr": 19,
+  "rz": 703,
+  "enr": 1641466,
+  "sa": 4860,
+  "ia": 11426,
+  "rate": 2.96,
+  "dis": 4.92,
+  "lz": 0
+ },
+ {
+  "st": "OR",
+  "name": "Oregon",
+  "districts": 207,
+  "nr": 3,
+  "rz": 112,
+  "enr": 542712,
+  "sa": 1470,
+  "ia": 4828,
+  "rate": 2.71,
+  "dis": 5.53,
+  "lz": 2
+ },
+ {
+  "st": "MI",
+  "name": "Michigan",
+  "districts": 875,
+  "nr": 22,
+  "rz": 482,
+  "enr": 1390894,
+  "sa": 3572,
+  "ia": 14531,
+  "rate": 2.57,
+  "dis": 5.66,
+  "lz": 1
+ },
+ {
+  "st": "WV",
+  "name": "West Virginia",
+  "districts": 62,
+  "nr": 2,
+  "rz": 16,
+  "enr": 234376,
+  "sa": 593,
+  "ia": 1535,
+  "rate": 2.53,
+  "dis": 3.3,
+  "lz": 0
+ },
+ {
+  "st": "MA",
+  "name": "Massachusetts",
+  "districts": 398,
+  "nr": 2,
+  "rz": 165,
+  "enr": 874850,
+  "sa": 2144,
+  "ia": 6668,
+  "rate": 2.45,
+  "dis": 4.35,
+  "lz": 0
+ },
+ {
+  "st": "AK",
+  "name": "Alaska",
+  "districts": 52,
+  "nr": 1,
+  "rz": 37,
+  "enr": 125675,
+  "sa": 302,
+  "ia": 1027,
+  "rate": 2.4,
+  "dis": 5.63,
+  "lz": 0
+ },
+ {
+  "st": "NJ",
+  "name": "New Jersey",
+  "districts": 674,
+  "nr": 2,
+  "rz": 428,
+  "enr": 1320057,
+  "sa": 2920,
+  "ia": 12718,
+  "rate": 2.21,
+  "dis": 5.36,
+  "lz": 6
+ },
+ {
+  "st": "AL",
+  "name": "Alabama",
+  "districts": 145,
+  "nr": 0,
+  "rz": 59,
+  "enr": 730594,
+  "sa": 1524,
+  "ia": 3481,
+  "rate": 2.09,
+  "dis": 4.74,
+  "lz": 1
+ },
+ {
+  "st": "CO",
+  "name": "Colorado",
+  "districts": 184,
+  "nr": 1,
+  "rz": 127,
+  "enr": 835871,
+  "sa": 1731,
+  "ia": 3973,
+  "rate": 2.07,
+  "dis": 6.05,
+  "lz": 4
+ },
+ {
+  "st": "PA",
+  "name": "Pennsylvania",
+  "districts": 716,
+  "nr": 18,
+  "rz": 374,
+  "enr": 1678438,
+  "sa": 3431,
+  "ia": 7455,
+  "rate": 2.04,
+  "dis": 4.36,
+  "lz": 3
+ },
+ {
+  "st": "MT",
+  "name": "Montana",
+  "districts": 387,
+  "nr": 3,
+  "rz": 351,
+  "enr": 151218,
+  "sa": 308,
+  "ia": 1193,
+  "rate": 2.04,
+  "dis": 3.76,
+  "lz": 0
+ },
+ {
+  "st": "ID",
+  "name": "Idaho",
+  "districts": 178,
+  "nr": 10,
+  "rz": 126,
+  "enr": 314554,
+  "sa": 607,
+  "ia": 1765,
+  "rate": 1.93,
+  "dis": 5.57,
+  "lz": 2
+ },
+ {
+  "st": "AZ",
+  "name": "Arizona",
+  "districts": 619,
+  "nr": 21,
+  "rz": 486,
+  "enr": 1094853,
+  "sa": 1871,
+  "ia": 6907,
+  "rate": 1.71,
+  "dis": 5.9,
+  "lz": 9
+ },
+ {
+  "st": "TN",
+  "name": "Tennessee",
+  "districts": 147,
+  "nr": 0,
+  "rz": 81,
+  "enr": 960916,
+  "sa": 1573,
+  "ia": 6066,
+  "rate": 1.64,
+  "dis": 5.23,
+  "lz": 5
+ },
+ {
+  "st": "UT",
+  "name": "Utah",
+  "districts": 150,
+  "nr": 6,
+  "rz": 93,
+  "enr": 668129,
+  "sa": 1090,
+  "ia": 4560,
+  "rate": 1.63,
+  "dis": 5.55,
+  "lz": 2
+ },
+ {
+  "st": "MD",
+  "name": "Maryland",
+  "districts": 28,
+  "nr": 0,
+  "rz": 3,
+  "enr": 870185,
+  "sa": 1343,
+  "ia": 3494,
+  "rate": 1.54,
+  "dis": 5.63,
+  "lz": 1
+ },
+ {
+  "st": "NY",
+  "name": "New York",
+  "districts": 1022,
+  "nr": 6,
+  "rz": 759,
+  "enr": 2444690,
+  "sa": 3696,
+  "ia": 11138,
+  "rate": 1.51,
+  "dis": 4.38,
+  "lz": 7
+ },
+ {
+  "st": "AR",
+  "name": "Arkansas",
+  "districts": 259,
+  "nr": 5,
+  "rz": 207,
+  "enr": 471793,
+  "sa": 692,
+  "ia": 1708,
+  "rate": 1.47,
+  "dis": 2.81,
+  "lz": 4
+ },
+ {
+  "st": "FL",
+  "name": "Florida",
+  "districts": 76,
+  "nr": 1,
+  "rz": 15,
+  "enr": 2826354,
+  "sa": 3000,
+  "ia": 5169,
+  "rate": 1.06,
+  "dis": 5.03,
+  "lz": 0
+ },
+ {
+  "st": "VA",
+  "name": "Virginia",
+  "districts": 156,
+  "nr": 0,
+  "rz": 89,
+  "enr": 1232047,
+  "sa": 1255,
+  "ia": 3518,
+  "rate": 1.02,
+  "dis": 5.88,
+  "lz": 4
+ },
+ {
+  "st": "NC",
+  "name": "North Carolina",
+  "districts": 330,
+  "nr": 4,
+  "rz": 278,
+  "enr": 1517102,
+  "sa": 1449,
+  "ia": 5371,
+  "rate": 0.96,
+  "dis": 5.73,
+  "lz": 15
+ },
+ {
+  "st": "OK",
+  "name": "Oklahoma",
+  "districts": 538,
+  "nr": 8,
+  "rz": 456,
+  "enr": 667458,
+  "sa": 631,
+  "ia": 1465,
+  "rate": 0.95,
+  "dis": 4.19,
+  "lz": 2
+ },
+ {
+  "st": "MS",
+  "name": "Mississippi",
+  "districts": 151,
+  "nr": 0,
+  "rz": 101,
+  "enr": 426168,
+  "sa": 388,
+  "ia": 488,
+  "rate": 0.91,
+  "dis": 2.53,
+  "lz": 1
+ },
+ {
+  "st": "SC",
+  "name": "South Carolina",
+  "districts": 80,
+  "nr": 0,
+  "rz": 49,
+  "enr": 723294,
+  "sa": 595,
+  "ia": 859,
+  "rate": 0.82,
+  "dis": 4.31,
+  "lz": 8
+ },
+ {
+  "st": "HI",
+  "name": "Hawaii",
+  "districts": 1,
+  "nr": 0,
+  "rz": 0,
+  "enr": 170433,
+  "sa": 140,
+  "ia": 340,
+  "rate": 0.82,
+  "dis": 7.26,
+  "lz": 0
+ },
+ {
+  "st": "LA",
+  "name": "Louisiana",
+  "districts": 183,
+  "nr": 3,
+  "rz": 147,
+  "enr": 642400,
+  "sa": 484,
+  "ia": 746,
+  "rate": 0.75,
+  "dis": 6.3,
+  "lz": 8
+ },
+ {
+  "st": "NM",
+  "name": "New Mexico",
+  "districts": 146,
+  "nr": 3,
+  "rz": 120,
+  "enr": 291533,
+  "sa": 194,
+  "ia": 358,
+  "rate": 0.67,
+  "dis": 3.97,
+  "lz": 0
+ },
+ {
+  "st": "CA",
+  "name": "California",
+  "districts": 1953,
+  "nr": 74,
+  "rz": 1421,
+  "enr": 5781904,
+  "sa": 3695,
+  "ia": 6985,
+  "rate": 0.64,
+  "dis": 5.35,
+  "lz": 29
+ },
+ {
+  "st": "PR",
+  "name": "Puerto Rico",
+  "districts": 1,
+  "nr": 0,
+  "rz": 1,
+  "enr": 240977,
+  "sa": 0,
+  "ia": 0,
+  "rate": 0,
+  "dis": null,
+  "lz": 1
+ }
+];
+var ZERO_EXPLAINER = "This is what the district reported to the U.S. Department of Education's Civil Rights Data Collection (CRDC) for 2023\u201324. Districts self-report, and this page does not independently verify district reports. A reported zero is the district's report, not a verified fact. In a review of the 2015\u201316 collection, the U.S. Government Accountability Office found that some of the nation's largest districts reported zeros that were incorrect (GAO-19-551R, June 2019). The GAO made no finding about this district's 2023\u201324 report. This page does not treat a reported zero as proof that no incidents occurred, and it does not treat a reported zero as proof that any incidents did occur.";
+var EXT_NOTE = "Rates above 100 students reported per 1,000 enrolled are shown with this note and are excluded from this page's ranked lists. The 100-per-1,000 figure is this page's review threshold; it is not a federal standard and crossing it is not a finding that a rate is too high. Districts operating therapeutic, hospital, or juvenile-justice programs \u2014 including programs serving students placed by other districts \u2014 can show very high rates that describe their enrollment, not necessarily their conduct. Rates also use CRDC enrollment as the denominator, and programs with short-stay enrollment can show rates that reflect that denominator.";
+var PARTIAL_NOTE = "Partial report: at least one school in this district did not submit a valid report for at least one practice type. The totals shown sum only the schools and practice types that reported, so they are incomplete as reported totals \u2014 not a complete district total.";
+var STATUS_LABEL = {
+  reported_incidents: "Reported 1 or more students",
+  reported_zero: "Reported zero students",
+  not_reported: "No valid report in the CRDC file"
+};
+var STATUS_CLASS = { reported_incidents: "b-inc", reported_zero: "b-zero", not_reported: "b-nr" };
+
+function tc(name){
+  var out = String(name || "").toLowerCase().replace(/(^|[\s\-\/])([a-z])/g, function(m, p, c){ return p + c.toUpperCase(); });
+  out = out.replace(/ Of /g, " of ").replace(/ The /g, " the ").replace(/ And /g, " and ");
+  return out;
+}
+function fmt(n){ return (n === null || n === undefined) ? "\u2014" : Number(n).toLocaleString("en-US"); }
+function fmt2(n){ return (n === null || n === undefined) ? "\u2014" : Number(n).toFixed(2); }
+function fmt1(n){ return (n === null || n === undefined) ? "\u2014" : Number(n).toFixed(1); }
+function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;"); }
+
+/* ---- state table ---- */
+var stateSort = { k: "rate", dir: -1 };
+function renderStates(){
+  var rows = STATES.slice();
+  rows.sort(function(a,b){
+    var x = a[stateSort.k], y = b[stateSort.k];
+    if (stateSort.k === "name"){ return stateSort.dir * String(x).localeCompare(String(y)); }
+    if (x === null || x === undefined) x = -Infinity;
+    if (y === null || y === undefined) y = -Infinity;
+    return stateSort.dir * (x - y);
+  });
+  var html = "";
+  rows.forEach(function(s){
+    html += "<tr><td>" + esc(s.name) + "</td><td class='num'>" + fmt(s.districts) + "</td><td class='num'>" + fmt(s.enr) +
+      "</td><td class='num'>" + fmt(s.sa) + "</td><td class='num'>" + fmt(s.ia) + "</td><td class='num'>" + fmt2(s.rate) +
+      "</td><td class='num'>" + (s.dis === null ? "\u2014" : fmt1(s.dis) + "\u00d7") + "</td><td class='num'>" + fmt(s.rz) +
+      "</td><td class='num'>" + fmt(s.nr) + "</td></tr>";
+  });
+  document.getElementById("statebody").innerHTML = html;
+}
+document.querySelectorAll("#statetable th.sortable").forEach(function(th){
+  th.addEventListener("click", function(){
+    var k = th.getAttribute("data-k");
+    if (stateSort.k === k){ stateSort.dir = -stateSort.dir; } else { stateSort.k = k; stateSort.dir = (k === "name") ? 1 : -1; }
+    renderStates();
+  });
+});
+renderStates();
+
+/* ---- district explorer ---- */
+var DATA = null, view = [], page = 0, PAGE = 100, openId = null;
+var STNAME = {};
+STATES.forEach(function(s){ STNAME[s.st] = s.name; });
+
+function notesFor(d){
+  var notes = [];
+  if (d.lz) notes.push("Reported zero students \u2014 enrollment over 10,000 (see reported-zero note)");
+  if (d.ext) notes.push("Rate shown with context note");
+  if (d.jus) notes.push("Operates a juvenile-justice facility program");
+  return notes;
+}
+function statusCell(d){
+  var html = "<span class='badge " + STATUS_CLASS[d.status] + "'>" + STATUS_LABEL[d.status] + "</span>";
+  notesFor(d).forEach(function(n){ html += "<span class='note-line'>" + esc(n) + "</span>"; });
+  if (d.part) html += "<span class='partial-note'>" + PARTIAL_NOTE + "</span>";
+  return html;
+}
+function changeCell(d){
+  if (d.chg === null || d.chg === undefined){
+    if (d.st21 === "not_reported" || !d.st21) return "\u2014<span class='note-line'>no valid report in 2020\u201321</span>";
+    if (d.status === "not_reported") return "\u2014<span class='note-line'>no valid report in 2023\u201324</span>";
+    return "\u2014";
+  }
+  var v = Number(d.chg);
+  return (v > 0 ? "+" : "") + v.toFixed(2);
+}
+function detailRow(d){
+  function trow(label, s, si, s5, inc, rate){
+    return "<tr><td>" + label + "</td><td class='num'>" + fmt(s) + "</td><td class='num'>" + fmt(si) + "</td><td class='num'>" + fmt(s5) + "</td><td class='num'>" + fmt(inc) + "</td><td class='num'>" + fmt2(rate) + "</td></tr>";
+  }
+  var h = "<tr class='detail'><td colspan='9'><div class='detail'>";
+  h += "<h4>" + esc(tc(d.n)) + " \u2014 " + esc(STNAME[d.st] || d.st) + "</h4>";
+  h += "<p>Enrollment (as summed from schools in the CRDC file): " + fmt(d.enr) + " students, of whom " + fmt(d.ei) + " were served under IDEA. Reporting status for 2023\u201324: <strong>" + STATUS_LABEL[d.status] + "</strong>.</p>";
+  h += "<div class='tablewrap'><table><thead><tr><th>Practice type</th><th>Students reported</th><th>of whom IDEA</th><th>of whom Section 504 only</th><th>Incidents reported</th><th>Rate per 1,000 enrolled</th></tr></thead><tbody>";
+  h += trow("Physical restraint", d.ps, d.psi, d.p5, d.pi, d.pr);
+  h += trow("Mechanical restraint", d.ms, d.msi, d.m5, d.mi, d.mr);
+  h += trow("Seclusion", d.ss, d.ssi, d.s5, d.si, d.sr);
+  h += trow("Summed across practice types (not unique students)", d.sa, d.sai, null, d.ia, d.ra);
+  h += "</tbody></table></div>";
+  if (d.dsub !== null && d.dsub !== undefined && d.dis !== null && d.dis !== undefined){
+    h += "<p>Students served under IDEA were " + fmt1(d.dsub) + "% of the students reported (summed across practice types) and " + fmt1(d.denr) + "% of enrollment \u2014 an IDEA disparity ratio of " + fmt1(d.dis) + "\u00d7. A ratio of 1.0 means IDEA students were reported in exact proportion to their share of enrollment.</p>";
+  }
+  if (d.r21 !== null && d.r21 !== undefined){
+    h += "<p>In 2020\u201321 this district's reported rate was " + fmt2(d.r21) + " per 1,000 (status: " + (STATUS_LABEL[d.st21] || "\u2014") + "), a reported change of " + changeCell(d) + " per 1,000. 2020\u201321 was a pandemic year; read change as reported change.</p>";
+  } else {
+    h += "<p>No 2020\u201321 comparison is shown: the district has no valid report in the CRDC file for 2020\u201321, or its 2023\u201324 report does not support a change figure.</p>";
+  }
+  if (d.status === "not_reported"){
+    h += "<div class='explainer'>This district has no valid report in the CRDC file for 2023\u201324. \u201cNo valid report\u201d is shown as its own state throughout this comparison; it is never read as zero.</div>";
+  }
+  if (d.status === "reported_zero"){
+    h += "<div class='explainer'>" + ZERO_EXPLAINER + "</div>";
+  }
+  if (d.ext){
+    h += "<div class='explainer'><strong>Rate shown with context note.</strong> " + EXT_NOTE + "</div>";
+  }
+  if (d.part){
+    h += "<div class='explainer'>" + PARTIAL_NOTE + (d.share !== null && d.share !== undefined ? " Schools enrolling about " + fmt1(d.share) + "% of the district's students submitted a valid report for at least one practice type." : "") + "</div>";
+  }
+  if (d.jus){
+    h += "<p class='footnote'>This district operates a school the CRDC identifies as a juvenile-justice facility.</p>";
+  }
+  h += "</div></td></tr>";
+  return h;
+}
+function applyView(){
+  var q = document.getElementById("q").value.trim().toLowerCase();
+  var fs = document.getElementById("fs").value;
+  var fst = document.getElementById("fst").value;
+  var sk = document.getElementById("sort").value;
+  var ranked = document.getElementById("ranked").checked;
+  var searching = q.length > 0;
+  var floor = fs ? 500 : 1000;
+  var excludedExt = 0;
+  view = DATA.filter(function(d){
+    if (fs && d.st !== fs) return false;
+    if (fst && d.status !== fst) return false;
+    if (searching && tc(d.n).toLowerCase().indexOf(q) === -1 && String(d.n).toLowerCase().indexOf(q) === -1) return false;
+    if (ranked && !searching){
+      if ((d.enr || 0) < floor) return false;
+      if (d.ext){ excludedExt++; return false; }
+    }
+    return true;
+  });
+  view.sort(function(a,b){
+    if (sk === "n") return tc(a.n).localeCompare(tc(b.n));
+    var x = a[sk], y = b[sk];
+    if (x === null || x === undefined) x = -Infinity;
+    if (y === null || y === undefined) y = -Infinity;
+    return y - x;
+  });
+  page = 0;
+  var cl = document.getElementById("countline");
+  var txt = view.length.toLocaleString("en-US") + " districts shown";
+  if (ranked && !searching){
+    txt += " in the ranked view (enrollment of at least " + floor.toLocaleString("en-US") + (fs ? " within the selected state" : " nationally") + ")";
+    if (excludedExt) txt += "; " + excludedExt + " district" + (excludedExt === 1 ? "" : "s") + " above the 100-per-1,000 review threshold excluded from this ranked list \u2014 search by name or switch off the ranked view to see them";
+  }
+  if (searching) txt += " matching \u201c" + q + "\u201d";
+  cl.textContent = txt + ". Select a row for the full breakdown.";
+  renderPage();
+}
+function renderPage(){
+  var start = page * PAGE;
+  var slice = view.slice(start, start + PAGE);
+  var html = "";
+  slice.forEach(function(d){
+    html += "<tr class='drow' data-id='" + d.id + "'><td>" + esc(tc(d.n)) + "</td><td>" + esc(d.st) + "</td><td class='num'>" + fmt(d.enr) +
+      "</td><td class='num'>" + fmt(d.sa) + "</td><td class='num'>" + fmt(d.ia) + "</td><td class='num'>" + fmt2(d.ra) +
+      "</td><td class='num'>" + (d.dis === null || d.dis === undefined ? "\u2014" : fmt1(d.dis) + "\u00d7") + "</td><td>" + statusCell(d) +
+      "</td><td class='num'>" + changeCell(d) + "</td></tr>";
+    if (openId === d.id) html += detailRow(d);
+  });
+  document.getElementById("dbody").innerHTML = html || "<tr><td colspan='9'>No districts match. Try a different name, state, or status.</td></tr>";
+  document.querySelectorAll("#dbody tr.drow").forEach(function(tr){
+    tr.addEventListener("click", function(){
+      var id = tr.getAttribute("data-id");
+      openId = (openId === id) ? null : id;
+      renderPage();
+    });
+  });
+  document.getElementById("prev").disabled = page <= 0;
+  document.getElementById("next").disabled = (start + PAGE) >= view.length;
+  document.getElementById("pageinfo").textContent = view.length ? ("Rows " + (start + 1) + "\u2013" + Math.min(start + PAGE, view.length) + " of " + view.length.toLocaleString("en-US")) : "";
+}
+["q","fs","fst","sort","ranked"].forEach(function(id){
+  document.getElementById(id).addEventListener(id === "q" ? "input" : "change", applyView);
+});
+document.getElementById("prev").addEventListener("click", function(){ if (page > 0){ page--; renderPage(); } });
+document.getElementById("next").addEventListener("click", function(){ if ((page + 1) * PAGE < view.length){ page++; renderPage(); } });
+
+fetch("data/districts.json").then(function(r){ return r.json(); }).then(function(data){
+  DATA = data;
+  var seen = {}, sel = document.getElementById("fs");
+  STATES.forEach(function(s){
+    var o = document.createElement("option");
+    o.value = s.st; o.textContent = s.name;
+    sel.appendChild(o); seen[s.st] = 1;
+  });
+  applyView();
+}).catch(function(){
+  document.getElementById("countline").textContent = "The district data file could not be loaded. The state summary above is complete; please reload the page to try the district explorer again.";
+});
+</script>
+</body>
+</html>
