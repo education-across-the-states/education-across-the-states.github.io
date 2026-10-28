@@ -37,7 +37,24 @@
   .standard{background:#fff;border:1px solid var(--rule);padding:18px 22px;margin:16px 0}
   footer{border-top:3px double var(--ink);margin-top:44px;padding-top:18px;font-family:Helvetica,Arial,sans-serif;font-size:13px;color:var(--muted);text-align:center}
   a{color:var(--accent)}
-  @media (max-width:600px){h1{font-size:32px}.tagline{font-size:17px}}
+  /* SITE-SEARCH */
+  .site-search{background:#fff;border:1px solid var(--rule);padding:18px 20px;margin:22px 0 4px;text-align:left}
+  .ss-label{font-family:Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);display:block;margin:0 0 8px;font-weight:700}
+  .ss-row{display:flex;gap:8px;flex-wrap:wrap}
+  .ss-input{font-family:Helvetica,Arial,sans-serif;font-size:16px;min-height:46px;padding:10px 12px;border:1px solid var(--rule);border-radius:4px;background:#fff;color:var(--ink);flex:1 1 240px;min-width:0;-webkit-appearance:none;appearance:none}
+  .ss-btn{font-family:Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;background:var(--accent);color:#fff;border:1px solid var(--accent);border-radius:4px;padding:10px 20px;min-height:46px;cursor:pointer}
+  .ss-btn:hover{background:var(--ink);border-color:var(--ink)}
+  .ss-hint{font-size:13.5px;color:var(--muted);margin:8px 0 0}
+  .ss-results{margin-top:12px;border-top:1px solid var(--rule);padding-top:10px}
+  .ss-count{font-family:Helvetica,Arial,sans-serif;font-size:12.5px;color:var(--muted);margin:0 0 6px}
+  .ss-result{display:block;text-decoration:none;color:var(--ink);padding:10px 8px;border-bottom:1px solid var(--rule)}
+  .ss-result:last-child{border-bottom:none}
+  .ss-result:hover{background:var(--paper)}
+  .ss-rtitle{display:block;font-size:17px;font-weight:700;color:var(--accent);line-height:1.3}
+  .ss-rmeta{display:block;font-family:Helvetica,Arial,sans-serif;font-size:12px;color:var(--muted);margin:2px 0}
+  .ss-badge{display:inline-block;background:var(--ink);color:#fff;border-radius:3px;padding:1px 7px;font-size:10.5px;letter-spacing:1px;text-transform:uppercase;margin-right:6px}
+  .ss-rsnip{display:block;font-size:14.5px}
+  @media (max-width:600px){h1{font-size:32px}.tagline{font-size:17px}.ss-input{flex:1 1 100%}}
 </style>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BKHMYPZ7BY"></script>
@@ -52,6 +69,10 @@
         async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
+<!-- GTranslate: sitewide translate button (added 2026-10-28) -->
+<div class="gtranslate-bar" style="text-align:center;padding:10px 8px 2px;font-family:Helvetica,Arial,sans-serif;font-size:13px"><span style="letter-spacing:1px;text-transform:uppercase;margin-right:8px">Translate</span><span class="gtranslate_wrapper"></span></div>
+<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"languages":["en","es","fr","pt","zh-CN","zh-TW","ar","vi","ko","ru","uk","ht","it","de","ja","hi","tl","pl"],"wrapper_selector":".gtranslate_wrapper"}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/dropdown.js" defer></script>
 <div class="wrap">
 
 <header>
@@ -63,6 +84,8 @@
 <nav>
   <a href="states/index.html">States</a>
   <a href="shows.html">Shows</a>
+  <a href="resources/">Resources</a>
+  <a href="law-library/">Law Library</a>
   <a href="#investigations">Investigations</a>
   <a href="#standard">Our Standard</a>
   <a href="#about">About</a>
@@ -70,6 +93,24 @@
   <a href="internships.html">Internships</a>
   <a href="#tips">Send a Tip</a>
 </nav>
+
+<!-- SITE-SEARCH -->
+<section class="site-search" aria-label="Site search">
+  <form id="ss-form" data-index="search-index.json" role="search">
+    <label class="ss-label" for="ss-q">Search the whole site</label>
+    <div class="ss-row">
+      <input type="search" id="ss-q" class="ss-input" autocomplete="off" enterkeyhint="search"
+             placeholder="Try &quot;Section 504&quot;, &quot;restraint&quot;, &quot;New Hampshire&quot;, &quot;charter schools&quot;&hellip;">
+      <button type="submit" class="ss-btn">Search</button>
+    </div>
+    <p class="ss-hint">Every episode of both education shows and Run the Room, every state page, the investigations, the law library, and our resources &mdash; one search.</p>
+    <div class="ss-results" id="ss-results" hidden>
+      <p class="ss-count" id="ss-count" aria-live="polite"></p>
+      <div id="ss-list"></div>
+    </div>
+  </form>
+</section>
+<!-- /SITE-SEARCH -->
 
 <section>
   <p class="lede">Weekday education briefings and weekly deep dives, state by state — plus national investigations built entirely from public records, federal data, and on-record voices. Every episode publishes its sources, so anything we say can be checked.</p>
@@ -80,7 +121,7 @@
   <p style="text-align:center;font-size:13px;color:var(--muted);margin:10px 0 0">Your information is protected — see our <a href="privacy.html">Privacy &amp; Data Security page</a>.</p>
   <div class="statband">
     <div class="stat"><b>50</b><span>States covered daily</span></div>
-    <div class="stat"><b>300+</b><span>Episodes published</span></div>
+    <div class="stat"><b>600+</b><span>Episodes published</span></div>
     <div class="stat"><b>2</b><span>Education shows, one newsroom</span></div>
     <div class="stat"><b>100%</b><span>Claims sourced</span></div>
   </div>
@@ -105,7 +146,6 @@
       <a href="https://music.amazon.com/podcasts/45754b83-d7eb-4fac-b3c7-0fcea7634d80">Amazon Music</a>
       <a href="https://www.youtube.com/channel/UCw4umGDpaYzg8qPdSYnxjVQ">YouTube</a>
       <a href="https://educationacrossthestates.com/education-across-the-states-feed/feed.xml">RSS Feed</a>
-      <a href="https://www.pandora.com/podcast/education-across-the-states/PC:1001123853">Pandora</a>
       <a href="shows/education-across-the-states.html">Episode Index</a>
     </p>
   </div>
@@ -119,7 +159,6 @@
       <a href="https://www.iheart.com/podcast/269-nh-education-trends-in-sou-348336780">iHeart</a>
       <a href="https://music.amazon.com/podcasts/cc886f45-f051-4be1-808b-b629de6b797b">Amazon Music</a>
       <a href="https://educationacrossthestates.com/nh-education-trends-southern-nh-feed/feed.xml">RSS Feed</a>
-      <a href="https://www.pandora.com/podcast/nh-education-trends-in-southern-nh/PC:1001123854">Pandora</a>
       <a href="shows/nh-education-trends.html">Episode Index</a>
     </p>
   </div>
@@ -151,6 +190,16 @@
   <p>A national special on Section 504 — the accommodation plan that almost quadrupled in fifteen years under one unchanging legal test, varies from 0% to over 30% depending on the building, and has never had a federal eligibility audit. Every claim proof-checked before air.</p>
 </section>
 
+<section id="law-library">
+  <h2>The Law Library</h2>
+  <h3><a href="https://educationacrossthestates.com/law-library/">Education Law by State — the official text, all 56 jurisdictions</a></h3>
+  <p>Every school system runs on two layers of law: the education code the legislature wrote and the administrative regulations written under it. Our library links the official text of both — plus each department of education — for the 50 states, the District of Columbia, and the U.S. territories, alongside our <em>Regulations, Section by Section</em> audio walkthroughs as they publish. No summaries standing in for the law: the links go to the official text, which controls.</p>
+  <p class="links"><a href="https://educationacrossthestates.com/law-library/">Open the law library</a></p>
+  <h3><a href="mckinney-vento.html">McKinney-Vento: The Students the Law Already Covers</a></h3>
+  <p>Our briefing on the federal homelessness education law: who qualifies (three of every four identified students are doubled-up, not in shelters), the rights every district owes — immediate enrollment, school of origin, transportation with the cross-district 50/50 default — the misunderstandings that produce audit findings and lawsuits, and the board-policy and front-office build for full compliance.</p>
+  <p class="links"><a href="mckinney-vento.html">Read the briefing</a></p>
+</section>
+
 <section id="standard">
   <h2>Our Standard</h2>
   <div class="standard">
@@ -163,7 +212,7 @@
 
 <section id="about">
   <h2>About</h2>
-  <p>Education Across the States is produced by <strong>Charles Mayfield</strong>, producer and owner — independent and self-funded, with no outside backers. The shows cover education the way it actually works: the federal law, the state rules, the district budgets, and the meetings where decisions get made.</p>
+  <p>Education Across the States is produced by <strong>Charles Mayfield</strong>, executive producer and owner — independent and self-funded, with no outside backers. <strong>Roman Greco</strong> serves as associate producer. The shows cover education the way it actually works: the federal law, the state rules, the district budgets, and the meetings where decisions get made.</p>
   <p>Press and guest inquiries: <a href="mailto:educationacrossthestates@gmail.com">educationacrossthestates@gmail.com</a> · (978) 291-8525. Run the Room: <a href="mailto:runtheroom@outlook.com">runtheroom@outlook.com</a>.</p>
 </section>
 
@@ -174,9 +223,118 @@
 
 <footer>
   <p>Education Across the States · The go to place for any issue having to do with education across the nation</p>
-  <p>Produced by Charles Mayfield · <a href="press-kit.html">Press Kit</a></p>
+  <p>Executive Producer: Charles Mayfield · Associate Producer: Roman Greco · <a href="press-kit.html">Press Kit</a></p>
 </footer>
 
 </div>
+<!-- SITE-SEARCH -->
+<script>
+(function(){
+  var form=document.getElementById('ss-form');
+  if(!form)return;
+  var input=document.getElementById('ss-q');
+  var box=document.getElementById('ss-results');
+  var count=document.getElementById('ss-count');
+  var list=document.getElementById('ss-list');
+  var INDEX_URL=form.getAttribute('data-index')||'search-index.json';
+  var MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var entries=null,loading=null,lastResults=[];
+  function load(){
+    if(entries)return Promise.resolve(entries);
+    if(loading)return loading;
+    loading=fetch(INDEX_URL).then(function(r){return r.json();}).then(function(j){entries=j.entries||[];return entries;});
+    return loading;
+  }
+  function fmtDate(iso){
+    if(!iso)return '';
+    var p=iso.split('-');
+    if(p.length!==3)return iso;
+    return MONTHS[parseInt(p[1],10)-1]+' '+parseInt(p[2],10)+', '+p[0];
+  }
+  function norm(s){return (s||'').toLowerCase().replace(/&/g,' and ').replace(/\s+/g,' ');}
+  function score(e,q,terms){
+    var t=norm(e.t),w=e.w||'',s=0,i,term;
+    var nq=norm(q).trim();
+    if(t.indexOf(nq)>=0)s+=120;
+    if(t.indexOf(nq)===0)s+=40;
+    var words=t.split(/[^a-z0-9]+/);
+    for(i=0;i<terms.length;i++){
+      term=terms[i];
+      if(!term)continue;
+      if(words.indexOf(term)>=0)s+=34;
+      else if(t.indexOf(term)>=0)s+=22;
+      if(e.s&&e.s.toLowerCase().indexOf(term)>=0)s+=6;
+      if(w.indexOf(term)>=0)s+=4;
+    }
+    var all=terms.length>0;
+    for(i=0;i<terms.length;i++){if((t+' '+w).indexOf(terms[i])<0){all=false;break;}}
+    if(all)s+=18;
+    if(s>0&&e.k!=='Episode')s+=15;
+    return s;
+  }
+  function render(q,scored){
+    box.hidden=false;
+    list.innerHTML='';
+    if(!scored.length){
+      count.textContent='No matches for \u201C'+q+'\u201D. Try a state, a law (IDEA, Section 504), or a single topic word.';
+      return;
+    }
+    var n=scored.length,show=Math.min(12,n);
+    count.textContent=n+' match'+(n===1?'':'es')+(n>show?' \u2014 showing the first '+show:'')+':';
+    for(var i=0;i<show;i++){
+      var e=scored[i][1];
+      var a=document.createElement('a');
+      a.className='ss-result';a.href=e.u;
+      var rt=document.createElement('span');rt.className='ss-rtitle';rt.textContent=e.t;a.appendChild(rt);
+      var rm=document.createElement('span');rm.className='ss-rmeta';
+      var b=document.createElement('span');b.className='ss-badge';b.textContent=e.k;rm.appendChild(b);
+      var meta=e.s||'';
+      if(e.d)meta+=(meta?' \u00B7 ':'')+fmtDate(e.d);
+      rm.appendChild(document.createTextNode(meta));
+      a.appendChild(rm);
+      if(e.x){var sn=document.createElement('span');sn.className='ss-rsnip';sn.textContent=e.x;a.appendChild(sn);}
+      list.appendChild(a);
+    }
+  }
+  function run(){
+    var q=input.value.trim().toLowerCase();
+    if(!q){box.hidden=true;lastResults=[];return;}
+    load().then(function(all){
+      var STOP={a:1,an:1,and:1,are:1,as:1,at:1,be:1,by:1,for:1,from:1,in:1,into:1,is:1,it:1,of:1,on:1,or:1,the:1,to:1,with:1};
+      var terms=q.replace(/&/g,' and ').split(/\s+/).filter(function(x){return x&&!STOP[x];});
+      if(!terms.length)terms=q.split(/\s+/);
+      var scored=[];
+      for(var i=0;i<all.length;i++){
+        var sc=score(all[i],q,terms);
+        if(sc>0)scored.push([sc,all[i]]);
+      }
+      scored.sort(function(a,b){
+        if(b[0]!==a[0])return b[0]-a[0];
+        if(a[1].d!==b[1].d)return (a[1].d||'')>(b[1].d||'')?-1:1;
+        return a[1].t<b[1].t?-1:1;
+      });
+      lastResults=scored.map(function(x){return x[1];});
+      render(q,scored);
+    }).catch(function(){
+      box.hidden=false;
+      count.textContent='Search is unavailable right now \u2014 please browse the menu above instead.';
+      list.innerHTML='';
+      lastResults=[];
+    });
+  }
+  var timer=null;
+  input.addEventListener('input',function(){clearTimeout(timer);timer=setTimeout(run,120);});
+  input.addEventListener('focus',function(){load();});
+  input.addEventListener('keydown',function(ev){if(ev.key==='Escape'){input.value='';box.hidden=true;lastResults=[];}});
+  form.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    if(lastResults.length){window.location.href=lastResults[0].u;}
+    else{run();}
+  });
+  var q0=new URLSearchParams(window.location.search).get('q');
+  if(q0){input.value=q0;run();}
+})();
+</script>
+<!-- /SITE-SEARCH -->
 </body>
 </html>
