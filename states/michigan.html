@@ -61,12 +61,17 @@
         async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
+<!-- GTranslate: sitewide translate button (added 2026-10-28) -->
+<div class="gtranslate-bar" style="text-align:center;padding:10px 8px 2px;font-family:Helvetica,Arial,sans-serif;font-size:13px"><span style="letter-spacing:1px;text-transform:uppercase;margin-right:8px">Translate</span><span class="gtranslate_wrapper"></span></div>
+<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"languages":["en","es","fr","pt","zh-CN","zh-TW","ar","vi","ko","ru","uk","ht","it","de","ja","hi","tl","pl"],"wrapper_selector":".gtranslate_wrapper"}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/dropdown.js" defer></script>
 <div class="wrap">
 
 <nav>
   <a href="../index.html">Home</a>
   <a href="index.html">All States</a>
   <a href="../press-kit.html">Press Kit</a>
+  <a href="../subscribe.html">Subscribe</a>
 </nav>
 
 <header>
@@ -108,6 +113,94 @@
       <li>Oct 21, 2026 — Plymouth-Canton Community Schools — ICE operation prompts elementary shelter-in-place</li>
     </ul>
 </section>
+
+<!-- SUBSCRIBE -->
+<style>
+  .subscribe-block{background:#fff;border:1px solid var(--rule);padding:18px 20px;margin:22px 0 4px}
+  .sb-label{font-family:Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);display:block;margin:0 0 8px;font-weight:700}
+  .sb-intro{font-size:15.5px;margin:0 0 14px}
+  .sb-legend{font-family:Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin:14px 0 6px;font-weight:700}
+  .sb-topics{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
+  @media (max-width:560px){.sb-topics{grid-template-columns:1fr}}
+  .sb-choice{font-size:15px;display:flex;gap:8px;align-items:flex-start;cursor:pointer}
+  .sb-choice input{margin-top:4px;accent-color:var(--accent);width:17px;height:17px;flex:none}
+  .sb-choice small{display:block;color:var(--muted);font-size:13px}
+  .sb-freq{display:flex;gap:18px;flex-wrap:wrap}
+  .sb-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+  .sb-input{font-family:Helvetica,Arial,sans-serif;font-size:16px;min-height:46px;padding:10px 12px;border:1px solid var(--rule);border-radius:4px;background:#fff;color:var(--ink);flex:1 1 240px;min-width:0;-webkit-appearance:none;appearance:none}
+  .sb-btn{font-family:Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;background:var(--accent);color:#fff;border:1px solid var(--accent);border-radius:4px;padding:10px 22px;min-height:46px;cursor:pointer}
+  .sb-btn:hover{background:var(--ink);border-color:var(--ink)}
+  .sb-note{font-size:13.5px;color:var(--muted);margin:10px 0 0}
+  .sb-powered{font-family:Helvetica,Arial,sans-serif;font-size:11px;color:var(--muted);margin:8px 0 0}
+  .sb-powered a{color:var(--muted)}
+</style>
+
+<div class="subscribe-block">
+  <form action="https://buttondown.com/api/emails/embed-subscribe/educationacrossthestates" method="post">
+    <span class="sb-label">Subscribe &mdash; new content by email</span>
+    <p class="sb-intro">Tell us what you want to hear about and how often. Free, always &mdash; you pick the topics, you pick the pace.</p>
+
+    <p class="sb-legend" id="sb-topics-label-eats">Send me updates on</p>
+    <div class="sb-topics" role="group" aria-labelledby="sb-topics-label-eats">
+      <label class="sb-choice"><input type="checkbox" name="tag" value="daily-briefings" checked>
+        <span>Daily state briefings<small>Education Across the States, every weekday &mdash; all 50 states, DC, and the territories</small></span></label>
+      <label class="sb-choice"><input type="checkbox" name="tag" value="new-hampshire">
+        <span>New Hampshire coverage<small>NH Education Daily and the weekly NH Education Trends</small></span></label>
+      <label class="sb-choice"><input type="checkbox" name="tag" value="investigations-records">
+        <span>Investigations &amp; the Records Project<small>Our national investigations and Education Records Project findings</small></span></label>
+      <label class="sb-choice"><input type="checkbox" name="tag" value="sped-law-resources">
+        <span>Special education law &amp; resources<small>IDEA, Section 504, IEP/504 explainers, Law Library and Resources updates</small></span></label>
+      <label class="sb-choice"><input type="checkbox" name="tag" value="deep-dives-specials">
+        <span>Deep dives &amp; specials<small>Weekly deep dives, Regulations Section by Section, and national specials</small></span></label>
+      <label class="sb-choice"><input type="checkbox" name="tag" value="run-the-room">
+        <span>Run the Room<small>Our sister podcast on how business actually works &mdash; Sundays, 7:00 PM ET</small></span></label>
+    </div>
+
+    <p class="sb-legend" id="sb-freq-label-eats">How often</p>
+    <div class="sb-freq" role="radiogroup" aria-labelledby="sb-freq-label-eats">
+      <label class="sb-choice"><input type="radio" name="tag" value="freq-as-it-posts">
+        <span>As it posts</span></label>
+      <label class="sb-choice"><input type="radio" name="tag" value="freq-daily-digest" checked>
+        <span>Daily digest</span></label>
+      <label class="sb-choice"><input type="radio" name="tag" value="freq-weekly-roundup">
+        <span>Weekly roundup</span></label>
+    </div>
+
+    <p class="sb-legend" id="sb-found-label-eats">How did you find us?</p>
+    <div class="sb-freq" role="radiogroup" aria-labelledby="sb-found-label-eats">
+      <label class="sb-choice"><input type="checkbox" name="tag" value="found-search">
+        <span>Web search</span></label>
+      <label class="sb-choice"><input type="checkbox" name="tag" value="found-social">
+        <span>A social media post</span></label>
+      <label class="sb-choice"><input type="checkbox" name="tag" value="found-podcast">
+        <span>Podcast app or episode link</span></label>
+      <label class="sb-choice"><input type="checkbox" name="tag" value="found-referral">
+        <span>Someone recommended us</span></label>
+      <label class="sb-choice"><input type="checkbox" name="tag" value="found-news">
+        <span>A news article</span></label>
+      <label class="sb-choice"><input type="checkbox" name="tag" value="found-other">
+        <span>Somewhere else</span></label>
+    </div>
+
+    <p class="sb-legend" id="sb-other-label-eats">Anything else you&rsquo;d like us to cover?</p>
+    <div class="sb-row" style="margin-top:6px">
+      <input type="text" name="metadata__other_topics" class="sb-input"
+             placeholder="Other topics of interest (optional)" aria-labelledby="sb-other-label-eats">
+    </div>
+
+    <div class="sb-row">
+      <input type="email" name="email" class="sb-input" required autocomplete="email"
+             placeholder="you@example.com" aria-label="Email address">
+      <input type="hidden" name="embed" value="1">
+      <input type="hidden" name="tag" value="site-eats">
+      <button type="submit" class="sb-btn">Subscribe</button>
+    </div>
+
+    <p class="sb-note">We&rsquo;ll send a confirmation link first &mdash; click it and you&rsquo;re in. Your address is used only for the updates you choose: no spam, no ads, and we never share or sell it. Unsubscribe in one click from any email. See our <a href="../privacy.html">Privacy &amp; Data Security page</a>.</p>
+    <p class="sb-powered">Powered by <a href="https://buttondown.com" target="_blank" rel="noopener">Buttondown</a>.</p>
+  </form>
+</div>
+<!-- /SUBSCRIBE -->
 
 <footer>
   <p>Education Across the States · The go to place for any issue having to do with education across the nation</p>
