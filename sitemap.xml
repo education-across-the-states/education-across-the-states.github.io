@@ -16,6 +16,12 @@
     <loc>https://educationacrossthestates.com/resources/</loc>
   </url>
   <url>
+    <loc>https://educationacrossthestates.com/resources/california-guides.html</loc>
+  </url>
+  <url>
+    <loc>https://educationacrossthestates.com/resources/california-guides-es.html</loc>
+  </url>
+  <url>
     <loc>https://educationacrossthestates.com/mckinney-vento.html</loc>
     <loc>https://educationacrossthestates.com/district-compliance.html</loc>
   </url>
@@ -244,5 +250,7 @@
   <url>
     <loc>https://educationacrossthestates.com/news/2026-11-03-indiana-election-day-south-bend.html</loc>
   </url>
-<url><loc>https://educationacrossthestates.com/news/2026-11-04-virginia-fifteen-yeses-thirty-two-nos.html</loc></url>
+  <url>
+    <loc>https://educationacrossthestates.com/news/2026-11-04-virginia-fifteen-yeses-thirty-two-nos.html</loc>
+  </url>
 </urlset>
