@@ -14,7 +14,7 @@ Subscribe to get every New Hampshire episode as it lands.
 
 Part of Education Across the States, covering education in the 50 states, the District of Columbia, and the U.S. territories. AI Generated</description>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Nov 2026 04:55:11 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 06:21:59 GMT</lastBuildDate>
     <atom:link href="https://educationacrossthestates.com/new-hampshire-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Education Across the States</itunes:author>
     <itunes:owner>
@@ -54,26 +54,6 @@ AI Generated</description>
     <itunes:duration>2609</itunes:duration>
   </item>
 <item>
-    <title>[NH] SAU Deep Dive — SAU 42 Nashua: The Enrollment Cliff and the November Vote (Revised)</title>
-    <description>AI Generated
-
-AI Generated</description>
-    <enclosure url="https://muse.ai/podcasts/media/1337692426099284/ac5626cf-254c-4fb4-b4a4-7aa3dd422fa5/ep-4670e426-b848-4130-9c90-301601f22b16.mp3" length="13649701" type="audio/mpeg"/>
-    <guid isPermaLink="false">ep-4670e426-b848-4130-9c90-301601f22b16</guid>
-    <pubDate>Mon, 19 Oct 2026 18:19:01 +0000</pubDate>
-    <itunes:duration>1706</itunes:duration>
-  </item>
-<item>
-    <title>[NH] NH Education Daily — Hot Off the Press: The Rulebook Is Being Rewritten — Ed 1100 and the December Hearings (Part 1, Revised v2)</title>
-    <description>AI Generated
-
-AI Generated</description>
-    <enclosure url="https://muse.ai/podcasts/media/1337692426099284/ac5626cf-254c-4fb4-b4a4-7aa3dd422fa5/ep-187e2f72-445c-48f3-9d24-99703d7ac025.mp3" length="18432805" type="audio/mpeg"/>
-    <guid isPermaLink="false">ep-187e2f72-445c-48f3-9d24-99703d7ac025</guid>
-    <pubDate>Mon, 19 Oct 2026 18:19:13 +0000</pubDate>
-    <itunes:duration>2304</itunes:duration>
-  </item>
-<item>
     <title>[NH] NH Education Deep Dive — The Funding Formula Rewrite: What HB 1563 Really Does (Revised)</title>
     <description>AI Generated
 
@@ -82,16 +62,6 @@ AI Generated</description>
     <guid isPermaLink="false">ep-ad7fe5b9-d8de-40b1-8cab-aa7718959c63</guid>
     <pubDate>Mon, 19 Oct 2026 18:19:24 +0000</pubDate>
     <itunes:duration>1653</itunes:duration>
-  </item>
-<item>
-    <title>[NH] NH Education Daily — Special Deep Dive: Understanding School Evaluations, Part 1A — The WIAT-IV: What the Test Measures (Revised)</title>
-    <description>AI Generated
-
-AI Generated</description>
-    <enclosure url="https://muse.ai/podcasts/media/1337692426099284/ac5626cf-254c-4fb4-b4a4-7aa3dd422fa5/ep-cf5780a5-f98a-4eb9-97fb-cef5d5975cb9.mp3" length="15649189" type="audio/mpeg"/>
-    <guid isPermaLink="false">ep-cf5780a5-f98a-4eb9-97fb-cef5d5975cb9</guid>
-    <pubDate>Mon, 19 Oct 2026 18:19:34 +0000</pubDate>
-    <itunes:duration>1956</itunes:duration>
   </item>
 <item>
     <title>[NH] IDEA, Section by Section — §1400: Short Title; Findings; Purposes (Revised)</title>
@@ -1050,6 +1020,36 @@ AI Generated</description>
     <guid isPermaLink="false">ep-755f7728-995d-46e1-bb96-9a8f95dcc22b</guid>
     <pubDate>Thu, 05 Nov 2026 04:53:40 +0000</pubDate>
     <itunes:duration>2002</itunes:duration>
+  </item>
+<item>
+    <title>[NH] SAU Deep Dive — SAU 42 Nashua: The Enrollment Cliff and the November Vote (Revised)</title>
+    <description>AI Generated</description>
+    <enclosure url="https://muse.ai/podcasts/media/1337692426099284/ac5626cf-254c-4fb4-b4a4-7aa3dd422fa5/ep-a4abc874-3f06-4567-abf9-0c68a58ccfdb.mp3" length="13204261" type="audio/mpeg"/>
+    <guid isPermaLink="false">ep-a4abc874-3f06-4567-abf9-0c68a58ccfdb</guid>
+    <pubDate>Thu, 05 Nov 2026 05:25:55 +0000</pubDate>
+    <itunes:duration>1650</itunes:duration>
+  </item>
+<item>
+    <title>[NH] NH Education Daily — Hot Off the Press: The Rulebook Is Being Rewritten — Ed 1100 and the December Hearings (Part 1, Revised v2)</title>
+    <description>Revised edition — tighter cut. New Hampshire is rewriting its entire special-education rulebook — all 29 parts of Ed 1100. Alex and Jordan unpack the five-phase timeline, the first proposals already moving, and what districts, teachers, and parents need to do before public hearings begin in December. Vote on future topics in our listener poll: https://strawpoll.com/xVg718Km6yr
+
+AI Generated</description>
+    <enclosure url="https://muse.ai/podcasts/media/1337692426099284/ac5626cf-254c-4fb4-b4a4-7aa3dd422fa5/ep-be801c70-3fc2-4612-b5ed-5b8ddfcdc170.mp3" length="17650597" type="audio/mpeg"/>
+    <guid isPermaLink="false">ep-be801c70-3fc2-4612-b5ed-5b8ddfcdc170</guid>
+    <pubDate>Thu, 05 Nov 2026 05:37:02 +0000</pubDate>
+    <itunes:duration>2206</itunes:duration>
+  </item>
+<item>
+    <title>[NH] NH Education Daily — Special Deep Dive: Understanding School Evaluations, Part 1A — The WIAT-IV: What the Test Measures (Revised)</title>
+    <description>Part 1 of 3 in our WIAT-IV special (Understanding School Evaluations, Part 1). Alex and Jordan cover what the WIAT-IV achievement test is, why schools use it, and how to read the scores — standard scores, percentile ranks, confidence intervals — then walk through all twenty subtests: what each measures and what it means for instruction. Part 2 continues with composites, patterns, and IEPs; Part 3 (released as &quot;Part 1B&quot;) goes deeper with cognitive testing and FAQs. Vote on future topics in our listener poll: https://strawpoll.com/xVg718Km6yr
+
+Sources — Pearson WIAT-4 product page: https://www.pearsonassessments.com/store/en/usd/p/100002039.html ; WIAT-4 Subtests and Composites flyer: https://www.pearsonclinical.ca/content/dam/school/global/clinical/ca/assets/wiat-4/wiat4-subtests-composites-flyer-ca.pdf ; WIAT-4 sample parent report: https://www.pearsonclinical.asia/content/dam/school/global/clinical/asia/assets/wechsler-family/wiat-4-sample-parent-report.pdf ; Peer-reviewed WIAT-4 evaluation: https://www.mdpi.com/2079-3200/10/2/30 ; NH Ed 1107.02 SLD models: https://content.myconnectsuite.com/api/documents/10a1d65b9ab84d41a66edb414a534759 . To verify federal SLD rules, search ecfr.gov for 34 CFR 300.307 and 300.309.
+
+AI Generated</description>
+    <enclosure url="https://muse.ai/podcasts/media/1337692426099284/ac5626cf-254c-4fb4-b4a4-7aa3dd422fa5/ep-5625d736-c555-44c0-acda-c18cd69d43fe.mp3" length="14303653" type="audio/mpeg"/>
+    <guid isPermaLink="false">ep-5625d736-c555-44c0-acda-c18cd69d43fe</guid>
+    <pubDate>Thu, 05 Nov 2026 06:20:47 +0000</pubDate>
+    <itunes:duration>1787</itunes:duration>
   </item>
   </channel>
 </rss>
